@@ -135,8 +135,6 @@
 		6C15BA661BCFA0B0007159A6 = {
 			isa = PBXGroup;
 			children = (
-				6C15BA891BCFA0C0007159A6 /* NKDBarcode */,
-				6C15BAB81BCFA0C0007159A6 /* libqrencode */,
 				6C15BA711BCFA0B0007159A6 /* MHCreateCode */,
 				6C15BA701BCFA0B0007159A6 /* Products */,
 			);
@@ -153,6 +151,7 @@
 		6C15BA711BCFA0B0007159A6 /* MHCreateCode */ = {
 			isa = PBXGroup;
 			children = (
+				6C82E2051BDF70DC00EDE6D7 /* libs */,
 				6C15BA751BCFA0B0007159A6 /* AppDelegate.h */,
 				6C15BA761BCFA0B0007159A6 /* AppDelegate.m */,
 				6C15BA781BCFA0B0007159A6 /* ViewController.h */,
@@ -224,7 +223,8 @@
 				6C15BAB61BCFA0C0007159A6 /* UIImage-Normalize.h */,
 				6C15BAB71BCFA0C0007159A6 /* UIImage-Normalize.m */,
 			);
-			path = NKDBarcode;
+			name = NKDBarcode;
+			path = ../NKDBarcode;
 			sourceTree = "<group>";
 		};
 		6C15BAB81BCFA0C0007159A6 /* libqrencode */ = {
@@ -247,7 +247,17 @@
 				6C15BAC71BCFA0C0007159A6 /* split.c */,
 				6C15BAC81BCFA0C0007159A6 /* split.h */,
 			);
-			path = libqrencode;
+			name = libqrencode;
+			path = ../libqrencode;
+			sourceTree = "<group>";
+		};
+		6C82E2051BDF70DC00EDE6D7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				6C15BA891BCFA0C0007159A6 /* NKDBarcode */,
+				6C15BAB81BCFA0C0007159A6 /* libqrencode */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

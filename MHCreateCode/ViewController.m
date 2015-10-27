@@ -28,8 +28,10 @@
     [self.view addSubview:qrIV];
     
     NSString *codeStr = @"90876543212276";
+    // 生成条形码的image
     UIImage *barImage = [UIImage imageFromBarcode:[[NKDCode128Barcode alloc]initWithContent:codeStr printsCaption:NO]];
     barIV.image = barImage;
+    // 生成二维码的image
     UIImage *qrImage = [QRCodeGenerator qrImageForString:codeStr imageSize:qrIV.bounds.size.width];
     qrIV.image = qrImage;
 
